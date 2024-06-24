@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<nav id="menu-h">
+    <ul>
+        <li><a href="index.html">FocAI</a></li>
+        <li><a href="educa-tech.html">Educa Tech</a></li>
+        <li><a href="Recursos-e-ferramentas.html">Recursos e ferramentas</a></li>
+        <li><a href="Contatos.html">Contatos</a></li>
+
+        <label for="link1" class="botao-principal">Login/Cadastro</label>
+        <input type="checkbox" id="link1" class="links-checkbox">
+        <input type="checkbox" id="link2" class="links-checkbox">
+      <div class="links">
+        <label for="link1" class="links-label link1"><a href="Cadastro.html">Professor</a></label>
+        <label for="link2" class="links-label link1"><a href="cadastro-aluno.html">Aluno</a></label>
+      </div>
+    </ul>
+</nav>
+
+<body>
+    <h1>Contato</h1>
+    <img id="img-contato"  src="img/img-contato.jpeg" alt="Contato-FocAI">
+    <form action="" autocomplete="off">
+        <fieldset>
+            <legend>Formulário de Contato</legend>
+
+            <label for="name">Nome/Empresa</label>
+            <input type="text" id="name" name="name" required placeholder="Nome/Empresa">
+
+            <label for="email">E-mail de Contato:</label>
+            <input type="email" name="email" id="email" required placeholder="E-mail de Contato">
+
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" rows="10" required maxlength="1000" placeholder="Assunto"></textarea>
+       
+           <div class="btn">
+            <input type="submit" class="btn">
+           </div>
+        </fieldset>
+    </form>
+</body>
+<footer>
+  <p>&copy; 2024 EducaTech</p>
+</footer>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks dos Professores</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<nav id="menu-h-perfil">
+    <ul>
+        <li><a href="perfil-aluno.html">Perfil</a></li>
+        <li><a href="painel-controle.html">Painel de Controle</a></li>
+        <li><a href="feedback-alunos.html">Feedbacks</a></li>
+        <li><a href="conf-aluno.html">Configurações</a></li>
+        <li><a href="Forum-aluno.html">Fórum</a></li>
+        <li><a href="index.html">Sair</a></li>
+    </ul>
+<body>
+     
+ <div class="container">
+        <h2> Feedback dos Professores</h2>
+        <form action="/submit-feedback" method="post">
+           
+            <label for="student-name">Nome do Aluno:José dos Santos</label>
+
+            <label for="teacher-name">Nome do Professor:Dalva Tech</label>
+
+            <label for="course">Curso/Exercício:Matemática/Trigonometria</label>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required>Nota: 8,0. Parabéns! Suas notas tem melhorado muito,mostrando assim o seu progresso.</textarea>
+        </form>
+    </div>
+</body>
+<footer>
+    <p>&copy; 2024 EducaTech</p>
+</footer>
+</html>

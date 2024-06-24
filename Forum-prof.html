@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav id="menu-h-perfil">
+            <ul>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="#">Painel de Controle</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+                <li><a href="Forum-prof.html">Fórum</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <h1>Fórum de Discussão</h1>
+        <br>
+        <section class="new-topic">
+            <h2>Criar Novo Tópico</h2>
+            <form id="new-topic-form">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="content">Conteúdo:</label>
+                <textarea id="content" name="content" rows="4" required></textarea>
+                
+                <button type="submit">Postar</button>
+            </form>
+        </section>
+
+        <section class="topics">
+            <h2>Tópicos Recentes</h2>
+            <ul>
+                <li>
+                    <h3>Planejamento de Aulas</h3>
+                    <p>Sugestões de atividades interativas/p>
+                </li>
+                <li>
+                    <h3>Interação com Pais e Comunidade</h3>
+                    <p>Estratégias para reuniões e projetos comunitários</p>
+                </li>
+                <li>
+                    <h3>Compartilhamento de Materias Didáticos</h3>
+                    <p>Segue conteúdos abaixo:</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EducaTech</p>
+    </footer>
+</body>
+</html>

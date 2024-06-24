@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback dos Professores</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<header>
+    <nav id="menu-h-perfil">
+        <ul>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="#">Editar Perfil</a></li>
+            <li><a href="configuracoes.html">Configurações</a></li>
+            <li><a href="Forum-prof.html">Fórum</a></li>
+            <li><a href="index.html">Sair</a></li>
+        </ul>
+</header>
+<body>
+    <div class="container">
+        <h2>Feedback dos Professores para Alunos</h2>
+        <form action="/submit-feedback" method="post">
+            <label for="student-name">Nome do Aluno:</label>
+            <input type="text" id="student-name" name="student-name" required>
+
+            <label for="course">Curso:</label>
+            <input type="text" id="course" name="course" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <button type="submit">Enviar Feedback</button>
+        </form>
+    </div>
+</body>
+<footer>
+    <p>&copy; 2024 EducaTech</p>
+</footer>
+</html>

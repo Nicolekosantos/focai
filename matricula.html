@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro-Aluno</title>
+    <link rel="stylesheet" href="index.css">    
+</head>
+
+<header>
+    <ul>
+        <li><a href="index.html">FocAI</a></li>
+        <li><a href="educa-tech.html">Educa Tech</a></li>
+        <li><a href="Recursos-e-ferramentas.html">Recursos e ferramentas</a></li>
+        <li><a href="Contatos.html">Contatos</a></li>
+    </ul>
+</header>
+
+<body>
+    <div class="container">
+     <form id="cadastro-form">
+
+        <h1>Cadastro de Dados</h1>
+        
+        <label for="studentName">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="dob">Data de Nascimento:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>CPF</label>
+        <input type="number" placeholder="CPF">
+
+        <label for="nome">Instituição de Ensino:</label>
+        <input type="text" id="nome" name="nome" required>
+    </form>
+
+    <form id="cadastro-form">
+
+            <h1>Seu nível de TDAH</h1>
+
+            <p>Para ter a sua melhor experiência no seu aprendizado e nas suas aulas, preencha o formulário à seguir com base no seu perfil. A partir do resultado, você terá um acesso personalizado da plataforma. Bons Estudos!</p>
+           
+            <fieldset>
+                <label>Frequentemente tem dificuldade em prestar atenção durante as aulas.
+                    <input type="checkbox" name="desatenção" value="1">
+                </label>
+                <label>Frequentemente comete erros por descuido em tarefas escolares.
+                    <input type="checkbox" name="desatenção" value="1">
+                </label>
+                <label>Frequentemente parece não ouvir o que o professor diz.
+                    <input type="checkbox" name="desatenção" value="1">
+                </label>
+                <label>Frequentemente tem dificuldade em seguir instruções e terminar tarefas escolares.
+                    <input type="checkbox" name="desatenção" value="1">
+                </label>
+                <label>Frequentemente perde materiais escolares, como livros ou cadernos.
+                    <input type="checkbox" name="desatenção" value="1">
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Frequentemente se levanta da cadeira durante a aula.
+                    <input type="checkbox" name="hiperatividade" value="1">
+                </label>
+                <label>Frequentemente fala fora de hora na sala de aula.
+                    <input type="checkbox" name="hiperatividade" value="1">
+                </label>
+                <label>Frequentemente tem dificuldade em esperar a sua vez para participar.
+                    <input type="checkbox" name="hiperatividade" value="1">
+                </label>
+                <label>Frequentemente interrompe ou se intromete nas conversas ou atividades dos outros.
+                    <input type="checkbox" name="hiperatividade" value="1">
+                </label>
+                <label>Frequentemente se mexe ou se contorce na cadeira durante a aula.
+                    <input type="checkbox" name="hiperatividade" value="1">
+                </label>
+            </fieldset>
+           </form>
+                
+                <button type="button" onclick="calculateResult()">Ver Resultado</button>
+
+            <div id="result"></div>
+            <button id="register" style="display:none;" onclick="redirectUser()">Cadastre-se</button>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    </form>
+    <footer>
+        <p>&copy; 2024 EducaTech</p>
+    </footer>
+
+</html>

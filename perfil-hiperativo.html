@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil-Hiperativo-Impulsivo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<header id="header-hiperativo">
+    <nav class="nav-hiperativo">
+        <ul class="ul-hiperativo">
+            <li class="li-hiperativo"><a id="a-hiperativo" href="perfil-hiperativo.html">Perfil</a></li>
+            <li class="li-hiperativo"><a id="a-hiperativo" href="painel-controle.html">Painel de controle</a></li>
+            <li class="li-hiperativo"><a id="a-hiperativo" href="feedback-alunos.html">Feedbacks</a></li>
+            <li class="li-hiperativo"><a id="a-hiperativo" href="conf-aluno.html">Configurações</a></li>
+            <li class="li-hiperativo"><a id="a-hiperativo" href="Forum-aluno.html">Fórum</a></li>
+            <li class="li-hiperativo"><a id="a-hiperativo" href="index.html">Sair</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body id="body-hiperativo">
+   
+    <main id="main-hiperativo">
+        <section class="perfil-hiperativo">
+            <img id="img-hiperativo" src="img/perfil.png" alt="Foto de perfil">
+            <h1>Bem-vindo<span id="studentName"></span>!</h1>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const studentName = localStorage.getItem('studentName');
+                    document.getElementById('studentName').innerText = studentName;
+                });
+            </script>
+        </section>
+        <section class="eda-hiperativo">
+            <button><a href="EdA.html">
+                <h2>EdA: Espaço de Aulas</h2>
+                <p>Acesse seu espaço de aulas aqui.</p>
+            </a></button>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>&copy; 2024 EducaTech</p>
+</footer>
+</html>

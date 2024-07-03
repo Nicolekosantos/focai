@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil-Desatento</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<header id="header-desatento">
+    <nav class="nav-desatento">
+        <ul class="ul-desatento">
+            <li class="li-desatento"><a href="perfil-desatento.html">Perfil</a></li>
+            <li class="li-desatento"><a href="painel-controle.html">Painel de controle</a></li>
+            <li class="li-desatento"><a href="feedback-alunos.html">Feedbacks</a></li>
+            <li class="li-desatento"><a href="conf-aluno.html">Configurações</a></li>
+            <li class="li-desatento"><a href="Forum-aluno.html">Fórum</a></li>
+            <li class="li-desatento"><a href="index.html">Sair</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body id="body-desatento">
+   
+    <main>
+        <section class="main-desatento">
+            <img src="img/perfil.png" alt="Foto de perfil">
+            <h1>Bem-vindo<span id="studentName"></span>!</h1>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const studentName = localStorage.getItem('studentName');
+                    document.getElementById('studentName').innerText = studentName;
+                });
+            </script>
+        </section>
+        <section class="eda-desatento">
+            <button><a href="EdA.html">
+                <h2>EdA: Espaço de Aulas</h2>
+                <p>Acesse seu espaço de aulas aqui.</p>
+            </a></button>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>&copy; 2024 EducaTech</p>
+</footer>
+</html>
